@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f3f8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="calculator" aria-label="Calculadora">
+        <header class="calculator-header">
+          <h1>Calculadora</h1>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema escuro">
+            <span id="theme-icon" aria-hidden="true">🌙</span>
+          </button>
+        </header>
+        <div class="display" aria-live="polite">
+          <div class="previous-operand" id="previous-operand"></div>
+          <div class="current-operand" id="current-operand">0</div>
+        </div>
+        <div class="keypad" aria-label="Teclado da calculadora">
+          <button class="key key-muted" data-action="clear">AC</button>
+          <button class="key key-muted" data-action="delete" aria-label="Apagar último dígito">⌫</button>
+          <button class="key key-operator" data-action="operator" data-value="/">÷</button>
+          <button class="key key-operator" data-action="operator" data-value="*">×</button>
+          <button class="key" data-action="digit" data-value="7">7</button>
+          <button class="key" data-action="digit" data-value="8">8</button>
+          <button class="key" data-action="digit" data-value="9">9</button>
+          <button class="key key-operator" data-action="operator" data-value="-">−</button>
+          <button class="key" data-action="digit" data-value="4">4</button>
+          <button class="key" data-action="digit" data-value="5">5</button>
+          <button class="key" data-action="digit" data-value="6">6</button>
+          <button class="key key-operator" data-action="operator" data-value="+">+</button>
+          <button class="key" data-action="digit" data-value="1">1</button>
+          <button class="key" data-action="digit" data-value="2">2</button>
+          <button class="key" data-action="digit" data-value="3">3</button>
+          <button class="key key-equals" data-action="equals">=</button>
+          <button class="key key-zero" data-action="digit" data-value="0">0</button>
+          <button class="key" data-action="decimal">.</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
